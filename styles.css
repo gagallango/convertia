@@ -177,18 +177,18 @@ body {
 
 .need-help {
     position: absolute;
-    color: #fff;
-    background: #FF6A00;
-    padding: 10px 30px;
-    left: 20%;
-    top: 75%;
-    border: 2px solid #fff;
-    font-weight: 600;
-    text-transform: uppercase;
-} .need-help:hover {
     background: #fff;
     border: 2px solid #FF6A00;
     color: #FF6A00;
+    padding: 10px 30px;
+    left: 20%;
+    top: 75%;
+    font-weight: 600;
+    text-transform: uppercase;
+} .need-help:hover {
+    background: #FF6A00;
+    border: 2px solid #fff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -296,6 +296,7 @@ body {
     color: #fff;
     padding: 10px 50px;
     position: absolute;
+    text-transform: uppercase;
     top: 66%;
     left: 12%;
 } .want:hover {
@@ -457,6 +458,9 @@ hr{
     text-transform: uppercase;
     right: 42%;
     position: absolute;
+} .help-section:hover {
+    color:#ff6a00;
+    text-decoration: none;
 }
 
 .help img {
@@ -646,7 +650,7 @@ tion:hover {
     position: fixed;
     z-index: 1000;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.8);
@@ -726,346 +730,655 @@ tion:hover {
 
 /*--- RESPONSIVE ---*/
 
+@media only screen and (max-width: 1240px) {
 
-@media only screen and (max-width: 480px) {
-
-    #main-section {
-        display: inherit;
+    .all-info {
+    position: absolute;
+    top: 10%;
+    color: #141414;
+    left: 7%;
     }
 
-    .first-image img {
-        width: 100%;
+    .all-info .inter {
+        font-size: 50px;
+            margin-bottom: 0;
     }
 
-    .first-image p {
-        position: absolute;
-        font-size: 1.3em;
-        padding: 5px 20px;
-        margin-left: 20%;
+    .box {
+    font-size: 30px;
+    width: 49%;
     }
 
-    .ini {
-        top: 37%;
+    .want {
+    top: 27%;
+    left: 7%;
     }
 
-    .incom {
-        top: 49%;
+    .form {
+            top: 22%;
+    left: 64%;
     }
 
-    .incre {
-        top: 61%;
+    .buttons {
+    bottom: 49%;
+    left: 35%;
     }
 
-    .contratacion {
-        font-size: .7em;
-        padding: 5px 15px;
-        left: 20%;
-        top: 75%;
-        font-weight: 600;
-        text-transform: uppercase;
-    } .contratacion:hover {
-        background: #fff;
-        color: #0063BC;
-        border: 2px solid #0063BC;
-        text-decoration: none;
+    .space p {
+    margin-right: 15%;
     }
 
-    .need-help {
-        padding: 10px 10px;
-        font-size: .6em;
-        top: 75%;
-    } 
-
-    .second-image img {
-        width: 100%;
+    .buttons-2 {
+    top: 151%;
+    left: 35%;
     }
 
     /*--- HELP ---*/
 
+    .chin h2 {
+    font-size: 70px;
+    }
+
+    .chin p {
+    font-size: 60px;
+    font-style: italic;
+    }
+
+    .chin {
+    position: absolute;
+    top: 15%; 
+    }
+
+    .ayuda {
+    left: 43%;
+    bottom: 67%;
+    }
+
+    #wrapper, #loginform {
+    top: 24%;
+    }
+
+    .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: -15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #main-section {
+    display: inherit;
+    }
+
+    .first-image img{
+    width: 768px;
+    }
+
+    .second-image img{
+    width: 768px;
+    }
+
+    .chin h2 {
+    font-size: 60px;
+    }
+
+    .chin p{
+    font-size: 50px;
+    }
+
+    .chin {
+    left: 27%;
+    }
+
+    .ayuda {
+    left: 40%;
+    bottom: 63%;
+}
+
+    .chin-images .images p {
+    text-align: center;
+    }
+
+    .chin-images .images img {
+    width: 70px;
+    height: 70px;
+    }
+
     .help-section {
-        border: 3px solid #FF6A00;
-        border-radius: 4px;
-        color: #ff6a00;
-        padding: 5px 40px;
-        text-transform: uppercase;
-        right: 30%;
-        position: absolute;
-        font-size: 12px;
+    right: 36%;
+    }
+
+    .conditions p{
+    margin: 20px 0 0 15px;
+    }
+
+    .all-info .inter {
+    font-size: 40px;
+    }
+
+    .tel-info {
+    font-size: 22px;
+    }
+
+    .all-info {
+    top: 14%;
+    }
+
+    .box {
+    font-size: 23px;
+    }
+
+    .want {
+    top: 33%;
+    }
+
+    .form {
+    top: 22%;
+    left: 32%;
+    position: relative;
+    margin-top: 20px;
+    box-shadow: 0px 0px 12px #00000029;
+    }
+
+    .buttons {
+    bottom: 15%;
+    left: 33%;
+    }
+
+    #wrapper, #loginform {
+    top: 40%;
+    right: 0%;
+    }
+
+    .want-button {
+    margin: 25px;
+    font-size: 10px;
+    padding: 9px 30px;
+    }
+
+    .space p {
+        margin-right: 0;
+    }
+
+    .space img {
+        width: 70px;
+    height: 70px;
+    }
+
+    .space {
+        height: 100px;
+    }
+
+    .text-2 {
+        font-size: 15px;
+    }
+
+    .buttons-2 {
+    top: 217%;
+    left: 33%;
+    }
+
+    .first {
+    font-size: 10px;
+    }
+
+    .third {
+    font-size: 10px;
+    margin-top: 10px;
+    }
+
+    .popup .popuptext {
+    bottom: 28px;
+    left: 35%;
+    }
+
+    .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: -15px;
+    }
+
+    .help-info p {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .contratacion {
+    font-size: 23px;
+    }
+
+    .need-help {
+            left: 20%;
+    font-size: 23px;
+    }
+
+    #wrapper, #loginform {
+    width: 300px;
+    height: 220px;
+    }
+
+    .welcome {
+    font-size: 17px;
+    }
+
+    #chatbox {
+    height: 100px;
+    width: 250px;
+    }
+
+    .all-info .inter {
+    font-size: 25px;
+    }
+
+    .tel-info {
+    font-size: 15px;
+    }
+
+    .box {
+    font-size: 15px;
+    width: 100px;
+    }
+
+    .want {
+    top: 31%;
+    font-size: 10px;
+    padding: 4px 25px;
+    }
+    .form {
+    top: 22%;
+    left: 8%;
+    height: 230px;
+    }
+
+    .popup .popuptext {
+    bottom: 28px;
+    left: 30%;
+    width: 300px;
+    }
+
+    .buttons a {
+     padding: 10px 15px;
+    font-size: 10px;
+    }
+
+    .buttons {
+    bottom: 24%;
+    left: 27%;
+}
+    .space {
+            margin: 10px;
+    display: table;
+    text-align: center;
+    }
+
+    .second {
+    text-align: left;
+    padding: 9px;
+    font-size: 10px;
+    }
+
+    .first {
+    font-size: 6px;
+    }
+    .third {
+    font-size: 6px;
+    }
+
+    .buttons-2 {
+    top: 326%;
+    left: 25%;
+    }
+
+    .buttons-2 a {
+    padding: 10px 15px;
+    font-size: 10px;
+    }
+
+    .chin h2 {
+    font-size: 30px;
+    }
+
+    .chin p {
+        font-size: 20px;
+    }
+
+    .ayuda {
+    left: 32%;
+    bottom: 70%;
+    padding: 5px 15px;
+    font-size: 15px;
+    border: 1px solid;
+    }
+
+    .help-info {
+    text-align: center;
+    font-size: 15px;
+    }
+
+    .form .header {
+    background: #0063BC 0% 0% no-repeat padding-box;
+    border-radius: 23px 23px 0px 3px;
+    opacity: 1;
+    top: 226px;
+    left: 935px;
+    width: 320px;
+    height: 50px;
+    }
+
+    .form .header .contrata {
+    padding: 15px 0;
+    }
+
+    .call-me {
+    font-size: 17px;
+    padding: 5px 25px;
+    top: 38%;
+    }
+
+    .chin-images {
+    display: grid;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    }
+
+    #blue-banner {
+    background: #0063BC;
+    color: #ffff;
+    display: inherit;
+    justify-content: center;
+    padding: 20px;
+    }   
+
+    #blue-banner img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    }
+
+    #blue-banner p {
+        display: initial;
     }
 
     hr {
         display: block;
     }
 
-    .chin {
-        position: absolute;
-        top: 16%;
-        left: 28%;
-    }
-
-    .chin h2 {
-        font-size: 30px;
-    }
-
-    .chin p {
-        font-size: 22px;
-        font-style: italic;
-    }
-
-    .ayuda {
-        position: absolute;
-        bottom: 68%;
-        left: 30%;
-        font-size: 10px;
-    }
-
-    .help-info {
-        text-align: center;
-        font-size: 14px;
-        padding: 20px;
-    }
-
-    .images img {
-        width: 90px;
-        height: 90px;
-    } 
-
-    .images {
-        display: block;
-    } .images p {
-        text-align: center;
-    }
-
-    .chin-images {
-        display: grid
-    }
-
-    #blue-banner {
-        display: block;
-        padding: 20px;
-    } #blue-banner p {
-        margin: auto;
-        display: inline;
-    } #blue-banner img {
-        width: 40px;
-        height: 40px;
+    .help-section{
+        font-size: 15px;
+    padding: 5px 15px;
+    right: 32%;
     }
 
     .row {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-left: -15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: -15px;
     }
 
-    .conditions p {
-        font-size: 8px;
-        color: #858585;
-        margin-left: 24px;
-        text-decoration: underline;
-    }   
-
-    /*--- CONTRATA ---*/
-
-    .all-info {
-        position: absolute;
-        top: 14%;
-        color: #141414;
-        left: 7%;
+    .chin {
+    left: 30%;
     }
+} 
 
-    .all-info .inter {
-        font-size: 20px;
-        text-transform: uppercase;
-        margin-bottom: 0;
-    }
+@media only screen and (max-width: 320px) {
 
-    .tel-info {
-        font-size: 10px;
-        font-weight: 600;
-    }
-
-    .box {
-        font-size: 9px;
-        width: 50%;
-    }
-
-    .want {
-        padding: 5px 35px;
-        top: 25%;
-        left: 8%;
-        font-size: .5em;
-    }
-    
-    .buttons {
-        position: absolute;
-        bottom: 38%;
-        left: 20%;
-    }
-
-    .buttons a {
-        padding: 5px 15px;
-        font-size: .8em;
-    }
-
-    .space {
-        margin: 20px;
-        height: 65px;
-    }
-
-    .space p {
+    #wrapper {
         display: none;
-    }
-
-    .space img {
-        width: 50px;
-        height: 45px;
-    }    
-
-    .want-button {
-        margin: 11px;
-        font-size: .5em;
-        color: #fff;
-        padding: 4px 20px;
-        text-transform: uppercase;
-        border-radius: 2px;
-    }
-
-    .text {
-        margin-top: 20px;
-        font-weight: bold;
-        margin-right: 10px;
-        font-size: .8em;
     }
 
     .form {
-        position: relative;
-        left: 3%;
-        height: 100px;
-        border-radius: 5px;
-        margin: 20px;
-    }
-
-    .form .number {
-        display: none;
+    top: 22%;
+    left: 10%;
+    height: 230px;
+    width: 250px;
     }
 
     .form .header {
-        height: 30px;
-        border-radius: 5px 5px 0px 3px;
+    background: #0063BC 0% 0% no-repeat padding-box;
+    border-radius: 23px 23px 0px 3px;
+    opacity: 1;
+    top: 226px;
+    left: 935px;
+    width: 250px;
+    height: 50px;
     }
 
-    .form .header .contrata {
-        text-align: center;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        padding: 6px 0;
-        font-size: 14px;
-        margin-bottom: 0;
+    .conditions p {
+    font-size: 5px;
+    margin: 20px 0 0 33px;
     }
-
-    .form .cellular {
-        text-align: center;
-        letter-spacing: 0px;
-        color: #000000;
-        font-size: 9px;
-        margin: 10px;   
-    }
-
-    .btn-submit {
-        height: 18px;
-        position: absolute;
-        top: 60%;
-    }
-    .checkedbox {
-        display: none;
-    }
-
-    .privacity {
-        display: none;
-    }
-
-    .call-me {
-        background: #FF6A00 0% 0% no-repeat padding-box;
-        border: 3px solid #FFFFFF;
-        border-radius: 4px;
-        color: #fff;
-        text-align: center;
-        font-size: 12px;
-        padding: 5px 25px;
-        letter-spacing: 0.42px;
-        position: absolute;
-        top: -12%;
-        right: 3%;
-    }
-
-    .popup {
-        font-size: 9px;
-        margin: 7px!important;
-        border-radius: 3px;
-    }
-
-    
-    .text-2 {
-        font-size: 8px;
-        margin-top: 10px;
-    }
-
-    .buttons-2 {
-        position: absolute;
-        top: 160%;
-        left: 20%;
-    } .buttons-2 a {
-        padding: 5px 15px;
-        font-size: .8em;
-    }
-
-    .popup .popuptext {
-        visibility: hidden;
-        width: 300px;
-        background-color: #fff;
-        color: #141414;
-        text-align: center;
-        border-radius: 6px;
-        padding: 8px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 200px;
-        left: 31%;
-        margin-left: -80px;
-        box-shadow: 0px 0px 12px #00000029;
-    }
-
-    /*--- SUB FOOTER ---*/
 
     .first {
-        font-size: 5px;
+    font-size: 5px;
     }
 
     .second {
-        font-size: 10px;
-    }
-    .third {
-        font-size: 5px;
-        margin-top: 11px;
+    text-align: left;
+    padding: 4px;
     }
 
     .fourt {
-        display: none;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: #FF6A00 0% 0% no-repeat padding-box;
+    height: 26px;
+    margin: 12px 0;
+    position: inherit;
+    }   
+
+    .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: -15px;
+    height: 50px;
     }
 
-    /*--- CHATBOX ---*/
+    .all-info {
+    top: 18%;
+    }
+
+    .all-info .inter {
+    font-size: 20px;
+    }
+
+    .tel-info {
+    font-size: 12px;
+    margin-bottom: 0;
+    }   
+
+    .box {
+    font-size: 13px;
+    width: 100px;
+    }   
+
+    .want {
+    top: 36%;
+    }
+
+    .call-me {
+    font-size: 10px;
+    padding: 5px 25px;
+    top: 38%;
+    left: -10%;
+    }
+
+    .buttons {
+    bottom: -4%;
+    left: 19%;
+    }
+
+    .popup {
+    border: none;
+    margin: 20px;
+    padding: 10px 15px;
+    font-size: 10px;
+    }
+
+    .space p {
+        margin: 0
+    }
+
+    .popup .popuptext {
+    bottom: -35%;
+    left: 28%;
+    width: 300px;
+    }
+
+    #myPopup img {
+        width: 20px;
+    height: 20px;
+    }
+
+    .buttons-2 {
+    top: 404%;
+    left: 21%;
+    }
+
+    .text {
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-right: 10px;
+    }
+
+    .btn-submit {
+    margin-left: 45px;
+    }
+
+    .privacity {
+    font-size: 8px;
+    }
+
+    .checkedbox {
+        width: 10px;
+    }
+
+    .chin {
+    left: 25%;
+    top: 20%;
+    }
+
+    .ayuda {
+    left: 33%;
+    bottom: 61%;
+    padding: 5px 15px;
+    font-size: 10px;
+    border: 1px solid;
+    }
+
+    .help-info p {
+    font-size: 15px;
+    margin: 5px;
+    }
+
+    .chin-images .images p {
+    font-size: 12px;
+    text-align: center;
+    }
+
+    #blue-banner p {
+    font-size: 12px;
+    display: initial;
+    }     
+
+    .help-section {
+    font-size: 10px;
+    padding: 5px 15px;
+    right: 36%;
+    border: 1px solid #FF6A00;
+    } 
+
+} 
+
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+    .chin {
+    position: absolute;
+    top: 18%;
+    }
+
+    .ayuda {
+    left: 32%;
+    bottom: 64%;
+    padding: 5px 15px;
+    font-size: 15px;
+    border: 1px solid;
+    }
+
+    .help-section {
+    font-size: 12px;
+    padding: 5px 15px;
+    right: 38%;
+    border: 2px solid #FF6A00;
+    }   
 
     #wrapper, #loginform {
-        display: none;
+    width: 274px;
+    height: 220px;
     }
 
-    /*--- MODAL ---*/
+    .welcome {
+    font-size: 12px;
+    } 
+    
+    .help-info p {
+    font-size: 15px;
+    }
 
-    .cosa {
-        width: 350px;
-        height: 350px;
+    #blue-banner p {
+    display: initial;
+    font-size: 12px;
+    }
+
+    .all-info {
+    top: 16%;
+    }   
+
+    .want {
+    top: 37%;
+    font-size: 10px;
+    padding: 4px 25px;
+    }
+
+    .buttons {
+    bottom: 8%;
+    left: 27%;
+    }
+
+    .popup .popuptext {
+    bottom: -125px;
+    left: 30%;
+    font-size: 11px;
+    width: 300px;
+    }  
+    
+    #myPopup img {
+    width: 20px;
+    height: 20px;
+    }   
+
+    .buttons-2 {
+    top: 342%;
+    left: 25%;
     }
 }
 
