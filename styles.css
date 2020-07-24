@@ -396,9 +396,7 @@ body {
 .popup {
     border: none;
     margin: 20px;
-    border-radius: 65px;
-    padding: 10px 20px;
-    width: 65px;
+    padding: 10px 30px;
 }
 
 .popup .popuptext {
@@ -1250,7 +1248,7 @@ tion:hover {
     }
 
     .buttons-2 {
-    top: 404%;
+    top: 394%;
     left: 21%;
     }
 
@@ -1311,7 +1309,7 @@ tion:hover {
 } 
 
 
-@media (min-width: 321px) and (max-width: 480px) {
+@media only screen and (min-width: 376px) and (max-width: 414px)  {
 
     .chin {
     position: absolute;
@@ -1352,17 +1350,23 @@ tion:hover {
     }
 
     .all-info {
-    top: 16%;
+        top: 15%;
     }   
 
     .want {
-    top: 37%;
+    top: 34%;
     font-size: 10px;
     padding: 4px 25px;
     }
 
+    .space {
+    margin: 60px;
+    display: table;
+    text-align: center;
+    }   
+
     .buttons {
-    bottom: 8%;
+    bottom: 14%;
     left: 27%;
     }
 
@@ -1379,8 +1383,33 @@ tion:hover {
     }   
 
     .buttons-2 {
-    top: 342%;
+    top: 424%;
     left: 25%;
     }
 }
 
+
+@media only screen and (min-width: 321px) and (min-width: 375px) {
+
+    .want {
+    top: 32%;
+    font-size: 10px;
+    padding: 4px 25px;
+    }
+
+    .buttons {
+    bottom: 8%;
+    left: 27%;
+    }
+
+    .popup {
+    border: none;
+    margin: 3px;
+    padding: 3px 16px;
+    }
+
+    .buttons-2 {
+    top: 436%;
+    left: 25%;
+    }
+}
