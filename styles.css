@@ -396,7 +396,9 @@ body {
 .popup {
     border: none;
     margin: 20px;
-    padding: 10px 30px;
+    border-radius: 65px;
+    padding: 10px 20px;
+    width: 65px;
 }
 
 .popup .popuptext {
